@@ -1,0 +1,234 @@
+<style>
+ 
+  
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+.brillo{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 0px;
+   
+}
+.brillo:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+
+}
+.brillo:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.brillo span{
+    position: absolute;
+    display: block;
+}
+.brillo span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.brillo span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.brillo span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.brillo span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+</style>
+
+<style> /*fondo*/
+    body {
+  background: url("img/Diseño\ sin\ título.png")
+    no-repeat center center fixed;
+}
+
+.blur {
+  background: url("img/Diseño\ sin\ título.png")
+    no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(8px);
+  position: absolute;
+  height: 500px;
+
+}
+
+.widget {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*  NOT REQUIRED  */
+
+.text {
+  height: 350px;
+  width: 350px;
+}
+
+.text h1 {
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  margin-top: 0px;
+  font-family: "Lora", serif;
+  font-weight: 70;
+  font-size: 3px;
+}
+
+.text p {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+
+
+
+
+</style>
+
+
+<style>
+.empresa {
+    width: 240px;
+    border-radius: 100%;
+    border: 3px solid #eee;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/airplane-engines.ico"><!-- Falta ico-->
+
+    <title>INICIO</title>
+</head>
+
+<body     <div id="large-header" class="large-header">
+
+                    <div id="particles-js"></div> <!-- stats - count particles --> 
+                    <span class="js-count-particles">
+                    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+                    </script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>    
+    <canvas id="demo"></canvas>
+  </div>
+
+  
+  </div>
+
+
+
+
+
+
+        <div class="widget center">
+
+            <div class="blur"></div>
+          
+            <div class="text center">
+              <h1 class="">
+              <p><img src="img/b.png" alt="logo" class="empresa"></p>
+              <p align="center"><font face="Sriracha" color=" #03e9f4" size="">MINI MANUAL DE ORIENTACION METEOROLOGICA</font></p>
+              <p align="center">
+                <a  href="index.html" target="_blank" class="brillo">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    PRESS TO CONTINUE
+                </a></p>
+            </h1>
+            </div>
+          
+        </div>
+</body>
+</html>
+
